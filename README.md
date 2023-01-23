@@ -1,4 +1,4 @@
-# nvidiaLinuxGamemode
+# arduinoMonitorLinux
 
 ## Getting started
 
@@ -21,5 +21,4 @@ Clone this repo<br />
 
 Comes from https://www.instructables.com/PC-Hardware-Monitor/ check it out!
 
-Enable Gamemode in steam by adding the launch option<br /> "gamemoderun %command%"<br />
 
