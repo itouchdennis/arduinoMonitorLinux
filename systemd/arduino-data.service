@@ -1,0 +1,15 @@
+[Unit]
+Description=Arduino Data Transfer Service
+After=syslog.target network.target arduino-connect.service
+#StartLimitIntervalSec=0
+[Service]
+Type=simple
+#Restart=always
+#RestartSec=1
+User=root
+ExecStart=/home/datesli/core_temps_display/senddata.sh
+ExecStop=killall senddata.sh
+
+
+[Install]
+WantedBy=multi-user.target

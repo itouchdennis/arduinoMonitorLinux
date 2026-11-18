@@ -1,0 +1,19 @@
+[Unit]
+Description=Arduino connect service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=datesli
+
+# Restart settings
+Restart=always
+RestartSec=2
+
+# Run your script directly, no nohup or backgrounding
+ExecStart=/home/datesli/core_temps_display/connect_arduino.sh
+ExecStop=/home/datesli/core_temps_display/stop_connect.sh
+
+[Install]
+WantedBy=multi-user.target
