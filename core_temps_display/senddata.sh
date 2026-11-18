@@ -114,6 +114,10 @@ fi
     temps1="1:$cpuTemp,$cpuUsage,$ramUsage,$date,;"
     temps2="2:$gpuTemp,$nvidiaUsage,$nvidiaVoltage,$waterTemp,;"
 
+    # Re-apply port settings every loop: other programs (serial monitors,
+    # slicers probing for printers) may switch the port to another baud rate
+    stty -F "$device" 9600 raw -echo -hupcl 2>/dev/null
+
     echo $devices > $device
     echo $temps1 > $device
     echo $temps2 > $device
