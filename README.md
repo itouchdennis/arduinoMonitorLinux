@@ -2,6 +2,8 @@
 
 Shows live PC hardware stats (CPU/GPU temperature, usage, RAM, water temperature, time) on an Arduino TFT display, fed from Linux over USB serial.
 
+![Arduino TFT display in the case, showing CPU and GPU temperature, usage, time and water temperature](docs/setup.jpg)
+
 My setup:
 - EndeavourOS
 - Intel Core i5 12600K
