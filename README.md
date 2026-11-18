@@ -110,7 +110,7 @@ sudo ~/core_temps_display/arduino_watchdog.sh
 sudo ~/core_temps_display/senddata.sh       # send data, Ctrl+C to stop
 ```
 
-`stop_connect.sh` ends the connection, but note it runs `killall tail` and so kills **every** `tail` process.
+`stop_connect.sh` ends the connection (it only stops `connect_arduino.sh` and the `tail` reading `/dev/ttyUSB*`/`/dev/ttyACM*`).
 
 ### Serial protocol
 
